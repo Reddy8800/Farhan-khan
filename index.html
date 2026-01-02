@@ -21,9 +21,10 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1516912762935029');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1516912762935029&ev=PageView&noscript=1"
-/></noscript>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1516912762935029&ev=PageView&noscript=1"/>
+</noscript>
 <!-- End Meta Pixel Code -->
 </head>
 
@@ -35,12 +36,10 @@ src="https://www.facebook.com/tr?id=1516912762935029&ev=PageView&noscript=1"
         <img src="logo.jpeg" class="logo" alt="Logo">
     </div>
 
-    <!-- POP-IN ANIMATED TITLE -->
     <h2 class="main-title popin">FARHAN KHAN</h2>
 
     <p class="subtitle">😍 Khelo Cricket Hamare Sath 😍</p>
 
-    <!-- TIMER -->
     <div class="timer-wrapper">
         <svg class="progress-ring" width="140" height="140">
             <circle class="progress-ring__circle"
@@ -53,25 +52,25 @@ src="https://www.facebook.com/tr?id=1516912762935029&ev=PageView&noscript=1"
         <div class="timer-text" id="timer">30</div>
     </div>
 
-    <!-- CTA -->
-    <a href="https://t.me/+1kdfa8Wz85BiNzQ1" class="cta-link">
-        <button class="cta-btn">
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px; vertical-align:middle;">
-    <path d="M22.05 2.39L1.56 10.31c-1.39.54-1.38 1.29-.25 1.64l5.25 1.64 2.01 6.05c.24.66.13.92.85.92.56 0 .81-.26 1.13-.56l2.52-2.45 5.24 3.87c.97.54 1.67.26 1.92-.9L23.6 4.01c.37-1.44-.55-2.09-1.55-1.62z"/>
-  </svg>
-  JOIN FREE CHANNEL NOW
-</button>
+    <!-- CTA (Subscribe fires here) -->
+    <a href="https://t.me/+1kdfa8Wz85BiNzQ1"
+       class="cta-link"
+       onclick="trackSubscribe()">
 
+        <button class="cta-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px; vertical-align:middle;">
+                <path d="M22.05 2.39L1.56 10.31c-1.39.54-1.38 1.29-.25 1.64l5.25 1.64 2.01 6.05c.24.66.13.92.85.92.56 0 .81-.26 1.13-.56l2.52-2.45 5.24 3.87c.97.54 1.67.26 1.92-.9L23.6 4.01c.37-1.44-.55-2.09-1.55-1.62z"/>
+            </svg>
+            JOIN FREE CHANNEL NOW
+        </button>
     </a>
 
-    <!-- RECORDS -->
     <div class="records">
         <p>BBL 44/43 Pass</p>
         <p>2023 IPL 74/73 Pass</p>
         <p>T20 World Cup 55/53 Match Pass</p>
     </div>
 
-    <!-- ACCURACY -->
     <div class="accuracy">
         <span>99%</span> ACCURACY
     </div>
@@ -83,11 +82,16 @@ src="https://www.facebook.com/tr?id=1516912762935029&ev=PageView&noscript=1"
 </div>
 
 <script src="script.js"></script>
+
+<!-- Subscribe Event -->
 <script>
-  fbq('track', 'Subscribe', {
-    value: SUBSCRIBE,
-    currency: 'INR',
-  });
+function trackSubscribe() {
+    fbq('track', 'Subscribe', {
+        value: 499.00,
+        currency: 'INR'
+    });
+}
 </script>
+
 </body>
 </html>
